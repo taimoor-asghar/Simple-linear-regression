@@ -42,17 +42,20 @@ We have downloaded a fuel consumption dataset, **`FuelConsumption.csv`**, which 
 - **CO2 EMISSIONS (g/km)** e.g. 182   --> low --> 0
 
 ## Reading the data in
+```python
 df = pd.read_csv("FuelConsumption.csv")
-
+```
 # take a look at the dataset
+```python
 df.head()
-
+```
 ### Data Exploration
 Let's first have a descriptive exploration on our data.
 
 # summarize the data
-df.describe()
 ```python
+df.describe()
+
 cdf = df[['ENGINESIZE','CYLINDERS','FUELCONSUMPTION_COMB','CO2EMISSIONS']]
 cdf.head(9)
 
